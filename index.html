@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>GIOS Timeline</title>
+  <!-- 1 -->
+  <link title="timeline-styles" rel="stylesheet" href="//cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <link rel="stylesheet" href="css/gios-timeline.css">
+  <div id='timeline-embed'></div>
+</head>
+
+<body>
+  <!-- 2 -->
+  <script src="//cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <!-- jquery lib load -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- 3 -->
+  <script type="text/javascript">
+  // The TL.Timeline constructor takes at least two arguments:
+  // the id of the Timeline container (no '#'), and
+  // the URL to your JSON data file or Google spreadsheet.
+  // the id must refer to an element "above" this code,
+  // and the element must have CSS styling to give it width and height
+  // optionally, a third argument with configuration options can be passed.
+  // See below for more about options.
+  timeline = new TL.Timeline('timeline-embed',
+    'https://docs.google.com/spreadsheets/d/1xuX7zymIWlIr8qWHjrfdseDaPTmmUJX8a5MWrU2eR8o');
+  </script>
+  <script type="text/javascript" src="js/gios-timeline.js"></script>
+</body>
+
+</html>
