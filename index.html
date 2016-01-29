@@ -24,8 +24,14 @@
   // and the element must have CSS styling to give it width and height
   // optionally, a third argument with configuration options can be passed.
   // See below for more about options.
+
+  var options = {
+    initial_zoom: 6,
+    start_at_slide: 70
+  }
+
   timeline = new TL.Timeline('timeline-embed',
-    'https://docs.google.com/spreadsheets/d/1xuX7zymIWlIr8qWHjrfdseDaPTmmUJX8a5MWrU2eR8o');
+    'https://docs.google.com/spreadsheets/d/1xuX7zymIWlIr8qWHjrfdseDaPTmmUJX8a5MWrU2eR8o', options);
   </script>
   <script type="text/javascript" src="js/gios-timeline.js"></script>
 </body>
