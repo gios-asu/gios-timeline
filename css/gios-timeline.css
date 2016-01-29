@@ -13,7 +13,7 @@
     background-color: rgb(240, 240, 240);
     font-size: 16px;
     text-shadow: none;
-    width: 225px;
+    width: 175px;
     margin-left: 0;
     padding: 6px;
     border-color: #990033;
@@ -66,6 +66,11 @@
 
 .tl-timemarker:hover .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
     color: rgb(240, 240, 240);
+}
+
+.tl-caption,
+.tl-credit {
+    color: rgb(255, 197, 10);
 }
 
 .tl-timemarker:hover .tl-timemarker-content-container {
