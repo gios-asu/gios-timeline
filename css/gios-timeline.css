@@ -68,6 +68,11 @@
     color: rgb(240, 240, 240);
 }
 
+.tl-caption,
+.tl-credit {
+    color: rgb(255, 197, 10);
+}
+
 .tl-timemarker:hover .tl-timemarker-content-container {
     background-color: rgb(153, 0, 51);
 }
