@@ -132,3 +132,22 @@
     text-decoration: underline;
 }
 
+
+.tl-text-content-image-left{
+  float:left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+
+.tl-text-content-image-right{
+  float:right;
+  margin: 5px 0 20px 20px;
+  text-align: center;
+}
+
+.tl-storyslider .tl-slider-container-mask .tl-slider-container{
+  text-align: right;
+}
+.tl-credit{
+  float: right;
+}
