@@ -13,11 +13,11 @@
     background-color: rgb(240, 240, 240);
     font-size: 16px;
     text-shadow: none;
-    width: 225px;
+    width: 175px;
     margin-left: 0;
     padding: 6px;
-    border-color: #990033;
-    border-right-width: 2px;
+    border-color: rgb(200, 200, 200);
+    border-right-width: 1px;
     border-right-style: solid;
 }
 
@@ -68,6 +68,11 @@
     color: rgb(240, 240, 240);
 }
 
+.tl-caption,
+.tl-credit {
+    color: rgb(255, 197, 10);
+}
+
 .tl-timemarker:hover .tl-timemarker-content-container {
     background-color: rgb(153, 0, 51);
 }
@@ -83,6 +88,9 @@
 .tl-menubar {
     right: 0;
     left: auto;
+    border-color: rgb(200, 200, 200);
+    border-left-width: 1px;
+    border-left-style: solid;
 }
 
 .tl-menubar-button {
@@ -122,4 +130,24 @@
 .tl-timeline a:hover {
     color: rgb(255, 197, 10);
     text-decoration: underline;
+}
+
+
+.tl-text-content-image-left{
+  float:left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+
+.tl-text-content-image-right{
+  float:right;
+  margin: 5px 0 20px 20px;
+  text-align: center;
+}
+
+.tl-storyslider .tl-slider-container-mask .tl-slider-container{
+  text-align: right;
+}
+.tl-credit{
+  float: right;
 }
