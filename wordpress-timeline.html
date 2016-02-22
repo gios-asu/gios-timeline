@@ -1,3 +1,5 @@
+[container] [timeline src="https://docs.google.com/spreadsheets/d/1xuX7zymIWlIr8qWHjrfdseDaPTmmUJX8a5MWrU2eR8o" initial_zoom="6" start_at_slide="70" lang="en" version="timeline3" ] [/container]
+<style type="text/css">
 #timeline-embed {
     width: 100%;
     height: 800px;
@@ -136,14 +138,7 @@
 
 .tl-text-content-image-left {
     float: left;
-    margin: 0 20px 20px 0;
-    text-align: center;
-}
-
-.tl-text-content-image-right {
-    float: right;
-    margin: 5px 0 20px 20px;
-    text-align: center;
+    padding-right: 10px;
 }
 
 .tl-storyslider .tl-slider-container-mask .tl-slider-container {
@@ -168,11 +163,21 @@
     padding-right: 5% !important;
 }
 
-.tl-slide .tl-slide-content-container .tl-slide-content .tl-text {
-    padding: 10px !important;
+.tl-slide .tl-slide-content-container .tl-slide-content .tl-media {
+    width: 100% !important;
+    max-width: 100% !important;
 }
+</style>
+<script type="text/javascript">
+function navigateToTimelineEvent(str) {
+    var slug = TL.Util.slugify(str);
+    var eventMarker = slug + '-marker';
 
-.tl-slide .tl-slide-content-container .tl-slide-content .tl-media{
-  width: 100% !important;
-  max-width: 100% !important;
+    if ($('#' + eventMarker).length == 0) {
+        return;
+    }
+
+    $('#' + eventMarker).trigger('click');
+
 }
+</script>
